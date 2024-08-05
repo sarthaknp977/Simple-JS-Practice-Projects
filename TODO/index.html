@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https:/cdn.tailwindcss.com'></script>
+    <style>
+        li span {
+            color: white;
+            padding: 5px;
+            background-color: rgba(215, 215, 215, 0.172);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-size: 15px;
+            font-family: monospace;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+        }
+
+        li:hover {
+            background-color: rgba(213, 201, 201, 0.49);
+
+        }
+
+        li {
+            position: relative;
+            border-radius: 10px;
+
+            display: flex;
+            padding: 4px 10px;
+            font-size: 2rem;
+            align-items: center;
+            justify-content: space-between;
+            width: 95%;
+            background-color: rgba(213, 201, 201, 0.304);
+            margin: 2px;
+            list-style: none;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body class="bg-red-400 flex flex-col items-center justify-center py-[5vw]">
+    <div
+        class="container flex flex-col p-20px gap-[2vw] justify-center items-center  w-[80vw] border border-white shadow-lg rounded-md min-h-[70vh]">
+        <h1 class="font-bold text-3xl">To-Do List</h1>
+        <div class="all-tasks w-4/5 min-h-[40vh] max-h-[40vh] overflow-scroll ">
+            <h2 class="font-bold text-3xl">Tasks for today: <div id="date"></div>
+            </h2>
+            <div class="font-bold text-3xl flex flex-col gap-1 task-area  mt-6 py-2">
+
+            </div>
+        </div>
+        <div class=" input w-4/5 flex flex-col items-center justify-center gap-[2vw] ">
+            <input class=" w-full px-3 py-2 rounded-md outline-none" type="text" name="task" id="task"
+                placeholder="Enter your task...">
+
+            <div class="brn">
+                <button class="w-fit px-6 py-[5px] bordeer border-black border-2  add-btn">Add</button>
+                <button class="w-fit px-6 py-[5px] bordeer border-black border-2  remove-btn">Remove </button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>

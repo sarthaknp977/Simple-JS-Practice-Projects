@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(45deg, rgb(82, 75, 75), rgb(121, 121, 164), rgb(44, 87, 112));
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: max(50vw, 700px);
+    height: 65vh;
+    gap: 4vh;
+    background: linear-gradient(45deg, rgb(82, 75, 75), rgb(121, 121, 164), rgb(44, 87, 112));
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.fields {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#weight-value {
+    width: min(42vw, 400px);
+}
+
+#weight-value::placeholder {
+    text-align: center;
+}
+
+.height {
+    display: flex;
+}
+
+.display {
+    font: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weight,
+.height {
+    width: 50%;
+}
+
+.units {
+    width: fit-content;
+}
+
+span {
+    position: relative;
+    text-align: right;
+    width: auto;
+    font-size: 20px;
+}
+
+.fields div input[type="number"] {
+    -moz-appearance: textfield;
+    width: min(21vw, 200px);
+    padding: 12px;
+    outline: none;
+    font-size: 20px;
+}
+
+.btns {
+    background-color: red;
+    width: max(50vw, 700px);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.btns button {
+    position: absolute;
+    left: 40%;
+    padding: 10px 2vw;
+    font-size: 20pxs;
+
+}
+
+.display img {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    display: none;
+}
